@@ -10,7 +10,6 @@ terraform {
   }
 }
 provider "aws" {
-  profile = "default"
   region  = "ap-south-1" 
 }
 resource "aws_instance" "app_server" {
@@ -20,3 +19,4 @@ resource "aws_instance" "app_server" {
   tags = {
     Name = "ExampleAppServerInstance"
   }
+}
